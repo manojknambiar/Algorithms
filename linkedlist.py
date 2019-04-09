@@ -16,6 +16,12 @@ class linkedlist(object):
         else:
             self.head = node
 
+    def display(self):
+        current = self.head
+        while current.next:
+            print(current.value)
+            current = current.next
+        print(current.value)
 
 def main():
 
@@ -26,12 +32,7 @@ def main():
     l1 = linkedlist(n)
     l1.append(k)
     l1.append(j)
-
-    current = l1.head
-
-    while current.next:
-        print(current.value)
-        current = current.next
+    l1.display()
 
 if __name__ == "__main__":
     main()
