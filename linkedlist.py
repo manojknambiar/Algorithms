@@ -23,6 +23,19 @@ class linkedlist(object):
             current = current.next
         print(current.value)
 
+    def search(self,searchVal):
+        current = self.head
+        index = 0
+        while current.next:
+            if searchVal == current.value:
+                return index
+            current = current.next
+            index += 1
+        if searchVal == current.value:
+            return index
+        else:
+            return -1
+
 def main():
 
     n = node(10)
@@ -33,6 +46,7 @@ def main():
     l1.append(k)
     l1.append(j)
     l1.display()
+    print(l1.search(40))
 
 if __name__ == "__main__":
     main()
