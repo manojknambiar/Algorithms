@@ -1,5 +1,5 @@
 # LinkedList Implementation
-
+# Author : Manoj Nambiar
 
 class node(object):
     def __init__(self,value):
