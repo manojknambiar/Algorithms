@@ -44,7 +44,7 @@ def main():
     d1 = doublyLinkedList(a1)
     d1.insert(a2,position=0)
     d1.insert(a3,position=1)
-    #d1.insert(a4,position=1)
+    d1.insert(a4,position=1)
     d1.display()
 
 
